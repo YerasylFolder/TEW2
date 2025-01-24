@@ -209,7 +209,7 @@ body {
 }
 
 /* Для экранов шириной до 768px */
-@media (max-width: 768px) {
+@media (max-width: 2340px) {
     body {
         font-size: 14px; /* Уменьшите шрифт */
     }
