@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - РПО1-24К</title>
+    <link rel="icon" href="images/logop.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="news_style.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="m-0">
+            <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+        </h1>
+        <nav>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижении</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container-g">
+            <h2>Мисс IT 2025 конкурс💻👑</h2>
+        
+            <p><strong>🌟 Вы студент первого курса? Умная, талантливая и яркая? Тогда этот конкурс для вас!</strong></p>
+        
+            <p><strong>📅 Срок подачи заявок:</strong><br>16 января – 28 января 2025 года.<br><strong>🔑 Важно:</strong> Заявка на участие должна быть подана до 28 января 2025 года.</p>
+        
+            <h3>🎭 Первый этап конкурса:</h3>
+            <p><strong>📍 Дата:</strong> 29 января 2025 года<br>
+            <strong>📍 Кабинет:</strong> 601<br>
+            <strong>📍 Время:</strong> 12:00</p>
+        
+            <p><strong>Программа:</strong></p>
+            <ul>
+                <li>Представление – вы можете представить себя через стихи или музыку (до 2 минут).🎤</li>
+                <li>Дефиле – черная футболка (не топ), черные лосины и туфли на каблуке (7 см+).👠</li>
+                <li>Актерское мастерство – прочтение монолога с харизмой.🎭</li>
+            </ul>
+        
+            <h3>📌 Финал конкурса:</h3>
+            <p><strong>📍 Дата:</strong> 6 марта 2025 года<br>
+            <strong>📍 Место:</strong> Актовый зал колледжа<br>
+            <strong>📍 Время:</strong> 14:00</p>
+        
+            <p><strong>Программа на финал:</strong></p>
+            <ul>
+                <li>Представление себя (2 минуты в стихах или формате презентации).</li>
+                <li>Шоу талантов – номер с куратором, где вы продемонстрируете свои лучшие способности.</li>
+                <li>Найдите инструмент – участники получат фотографию частично скрытого инструмента. Необходимо найти его и дать описание.</li>
+                <li>Этно-шоу – каждому участнику будет присвоена страна. Участник должен будет надеть национальную одежду этой страны и исполнить традиционный танец.</li>
+            </ul>
+        
+            <p><strong>✨ Будьте яркими, проявите свои таланты и станьте "Мисс IT - 2025"! ✨</strong></p>
+        
+            <p><strong>—————————————————</strong></p>
+        
+            <p><strong>Контактный номер:</strong><br>
+            Мухамед Улболсын (87072623020)<br>
+            <strong>Номер организатора для вопросов:</strong><br>
+            m.ulbo.zh (Telegram)</p>
+            <a href="home.html" class="back-btn">Назад</a>       
+    </main>    
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

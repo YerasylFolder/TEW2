@@ -1,0 +1,183 @@
+/* Стиль для секции куратора */
+.curator-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Стиль для карточки куратора (женская) */
+.student-card.curator {
+    background: #fce4ec; /* Легкий розовый фон для женщины */
+    border: 3px solid #f8bbd0; /* Светлый розовый бордер */
+    color: #880e4f; /* Темно-розовый текст */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Увеличенная ширина карточки */
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; /* Увеличенная высота карточки для куратора */
+}
+
+/* Заголовок куратора */
+.curator-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #880e4f;
+    margin-bottom: 15px;
+}
+
+/* Фото куратора */
+.curator-photo {
+    width: 150px; /* Можно увеличить размер фотографии для куратора */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #880e4f; /* Используем темно-розовый цвет для рамки куратора */
+}
+
+/* Фото студента */
+.student-photo {
+    width: 120px; /* Увеличенный размер фото */
+    height: 120px; /* Увеличенный размер фото */
+    object-fit: cover;
+    border-radius: 50%; /* Округлая форма */
+    margin-bottom: 15px;
+    border: 3px solid #f8bbd0; /* Рамка вокруг фото */
+}
+
+/* Фото мужчин */
+.male-photo {
+    width: 120px; /* Размер фотографии */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Круглая форма */
+    margin-bottom: 15px;
+    border: 3px solid #1E90FF; /* Ярко-синий */
+}
+
+/* Студенты */
+.students-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три карточки в ряду */
+    gap: 30px;
+    justify-items: center; /* Центрирование карточек */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+/* Стиль для карточки студента */
+.student-card {
+    background: #e0f7fa;
+    border: 2px solid #0288d1;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px; /* Увеличенное количество отступов */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 420px; /* Увеличенная высота карточки для студентов */
+    max-width: 370px; /* Увеличенная ширина карточки */
+    box-sizing: border-box; /* Учитываем padding в размере */
+}
+
+/* Женская карточка */
+.student-card.female {
+    background: #fce4ec;
+    border: 1px solid #f8bbd0;
+    color: #880e4f;
+}
+
+/* Мужская карточка */
+.student-card.male {
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    color: #1565c0;
+}
+
+/* Кнопка "Подробнее" */
+.btn-details {
+    background-color: #0288d1;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 25px; /* Увеличенное количество отступов для кнопки */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Увеличенный размер шрифта */
+    margin-top: auto; /* Кнопка будет внизу карточки */
+    align-self: center; /* Выравнивание кнопки по центру */
+}
+
+.btn-details:hover {
+    background-color: #0277bd;
+}
+
+/* Стиль для карточки создателя */
+.student-card.creator {
+    background: #e0f7fa; /* Легкий розовый фон для женщины */
+    border: 2px solid #0288d1; /* Светлый розовый бордер */
+    color: #0277bd; /* Темно-розовый текст */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Увеличенная ширина карточки */
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; /* Увеличенная высота карточки для куратора */
+}
+
+/* Фото создателя */
+.creator-photo {
+    width: 150px; /* Можно увеличить размер фотографии для куратора */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #046aa1; /* Используем темно-розовый цвет для рамки куратора */
+}
+
+/* Заголовок куратора */
+.creator-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #046aa1;
+    margin-bottom: 15px;
+}
+
+/* Анимация при наведении на карточку */
+.student-card, .curator-card, .creator-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover, .curator-card:hover, .creator-card:hover {
+    transform: translateY(-10px); /* Поднимает карточку на 10px */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Более сильная тень */
+}
+
+/* Анимация fade-in для всех карточек */
+.students-wrapper, .curator-section {
+    animation: fadeIn 2s ease-in-out; /* Плавное появление */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Начальная невидимость */
+        transform: translateY(20px); /* Сдвиг вниз */
+    }
+    to {
+        opacity: 1; /* Полная видимость */
+        transform: translateY(0); /* Возврат на место */
+    }
+}

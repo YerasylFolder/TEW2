@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - РПО1-24К</title>
+    <link rel="icon" href="images/logop.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="news_style.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="m-0">
+            <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+        </h1>
+        <nav>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижении</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container-g">
+        <h2>Конкурс по разработке мобильных приложений 2025 📱🚀</h2>
+
+    <p><strong>🌟 Ты увлекаешься разработкой мобильных приложений? Хочешь показать свои навыки и получить ценные призы? Тогда этот конкурс для тебя!</strong></p>
+
+    <p><strong>📅 Срок подачи заявок:</strong><br>16 января – 28 января 2025 года.<br><strong>🔑 Важно:</strong> Заявка на участие должна быть подана до 28 января 2025 года.</p>
+
+    <h3>🎭 Этапы конкурса:</h3>
+    <p><strong>📍 Дата:</strong> 2 февраля 2025 года<br>
+    <strong>📍 Место:</strong> Кабинет 305<br>
+    <strong>📍 Время:</strong> 11:00</p>
+
+    <p><strong>Программа первого этапа:</strong></p>
+    <ul>
+        <li>Презентация мобильного приложения – расскажи о своем проекте, его функционале и особенности (до 5 минут).</li>
+        <li>Демонстрация работы приложения – покажи, как работает приложение в действии.</li>
+        <li>Оценка проекта – жюри будет оценивать удобство, инновационность и стабильность работы приложения.</li>
+    </ul>
+
+    <h3>📌 Финал конкурса:</h3>
+    <p><strong>📍 Дата:</strong> 15 марта 2025 года<br>
+    <strong>📍 Место:</strong> Актовый зал колледжа<br>
+    <strong>📍 Время:</strong> 14:00</p>
+
+    <p><strong>Программа финала:</strong></p>
+    <ul>
+        <li>Презентация проекта (10 минут) – расскажи о процессе разработки, примененных технологиях и продемонстрируй работу приложения.</li>
+        <li>Обсуждение с экспертами – обмен мнениями с экспертами по улучшению функционала приложения и его будущих версиях.</li>
+        <li>Награждение победителей – победители получат подарки и сертификаты, а также возможность представить свои проекты на профессиональных конкурсах.</li>
+    </ul>
+
+    <p><strong>✨ Покажи миру свое мобильное приложение и стань лидером среди разработчиков! ✨</strong></p>
+
+    <p><strong>—————————————————</strong></p>
+
+    <p><strong>Контактный номер:</strong><br>
+    Александра Боброва (87012345678)<br>
+    <strong>Номер организатора для вопросов:</strong><br>
+    a.bobrova (Telegram)</p>
+    <a href="home.html" class="back-btn">Назад</a>
+    </main>    
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студент - РПО1-24К</title>
+    <link rel="icon" href="images/logop.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="m-0">
+            <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+        </h1>
+        <nav>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижении</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div id="student-profile" data-student-id="9"> <!-- Уникальный ID студента -->
+        <div class="profile-container">
+            <!-- Фото профиля -->
+            <div class="profile-photo">
+                <img src="images\studentka.png" alt="Profile Photo" id="profile-photo">
+            </div>
+    
+            <!-- Информация профиля -->
+            <div class="profile-info" id="profile-info">
+                <p><strong>ФИО:</strong> <span id="name-text">Человек Человечкин</span></p>
+                <hr>
+                <p><strong>Год рождения:</strong> <span id="birthyear-text">Данные отсутствуют</span></p>
+                <hr>
+                <p><strong>ИИН:</strong> <span id="iin-text">Данные отсутствуют</span></p>
+                <hr>
+                <p><strong>Место рождения:</strong> <span id="address-text">Данные отсутствуют</span></p>
+    
+                <div class="profile-buttons">
+                    <button class="btn-edit" id="edit-button">Редактировать профиль</button>
+
+                    
+                    
+                    
+                    <a href="https://wa.me/77051298533" class="btn-contact" target="_blank">Контакты</a>
+                    <button id="back-button" class="btn-back">Назад</button> <!-- Кнопка назад в том же контейнере -->
+                </div>
+            </div>
+    
+            <!-- Форма редактирования (будет скрыта по умолчанию) -->
+            <div class="edit-profile-form" id="edit-form" style="display: none;">
+                <h3>Редактировать профиль</h3>
+                <label for="new-photo">Фото:</label>
+                <input type="file" id="new-photo" accept="image/*"><br><br>
+    
+                <label for="new-name">ФИО:</label>
+                <input type="text" id="new-name" value="Человек Человечкин"><br><br>
+    
+                <label for="new-birth-year">Год рождения:</label>
+                <input type="text" id="new-birth-year" value="Данные отсутствуют"><br><br>
+    
+                <label for="new-iin">ИИН:</label>
+                <input type="text" id="new-iin" value="Данные отсутствуют"><br><br>
+    
+                <label for="new-address">Место рождения:</label>
+                <input type="text" id="new-address" value="Данные отсутствуют"><br><br>
+    
+                <button id="save-changes">Сохранить изменения</button>
+                <button id="cancel-edit">Отменить</button>
+            </div>
+        </div>
+    </div>
+</main>    
+
+<script>
+    document.getElementById('back-button').addEventListener('click', function() {
+    window.history.back(); // Возвращает пользователя на предыдущую страницу
+});
+</script>
+
+<script>
+// Функция для загрузки данных профиля
+    window.addEventListener('DOMContentLoaded', function() {
+        // Получаем уникальный ID студента из атрибута data-student-id
+        const studentId = document.getElementById('student-profile').getAttribute('data-student-id');
+    
+        // Загружаем данные из localStorage для этого студента
+        const storedName = localStorage.getItem(`${studentId}_name`);
+        const storedBirthYear = localStorage.getItem(`${studentId}_birthYear`);
+        const storedIin = localStorage.getItem(`${studentId}_iin`);
+        const storedAddress = localStorage.getItem(`${studentId}_address`);
+        const storedPhoto = localStorage.getItem(`${studentId}_photo`);
+    
+        // Если данные сохранены, отображаем их
+        if (storedName) document.getElementById('name-text').textContent = storedName;
+        if (storedBirthYear) document.getElementById('birthyear-text').textContent = storedBirthYear;
+        if (storedIin) document.getElementById('iin-text').textContent = storedIin;
+        if (storedAddress) document.getElementById('address-text').textContent = storedAddress;
+        if (storedPhoto) document.getElementById('profile-photo').src = storedPhoto;
+    });
+    
+    // Обработчик нажатия на кнопку "Редактировать профиль"
+    document.getElementById('edit-button').addEventListener('click', function() {
+        const studentId = document.getElementById('student-profile').getAttribute('data-student-id');
+        
+        // Показываем форму редактирования
+        document.getElementById('edit-form').style.display = 'block';
+        document.getElementById('profile-info').style.display = 'none';
+    
+        // Подставляем текущие данные в поля формы
+        document.getElementById('new-name').value = document.getElementById('name-text').textContent;
+        document.getElementById('new-birth-year').value = document.getElementById('birthyear-text').textContent;
+        document.getElementById('new-iin').value = document.getElementById('iin-text').textContent;
+        document.getElementById('new-address').value = document.getElementById('address-text').textContent;
+    });
+    
+    // Обработчик нажатия на кнопку "Сохранить изменения"
+    document.getElementById('save-changes').addEventListener('click', function() {
+        const studentId = document.getElementById('student-profile').getAttribute('data-student-id');
+        
+        const newName = document.getElementById('new-name').value;
+        const newBirthYear = document.getElementById('new-birth-year').value;
+        const newIin = document.getElementById('new-iin').value;
+        const newAddress = document.getElementById('new-address').value;
+        const newPhoto = document.getElementById('new-photo').files[0];
+    
+        // Сохраняем данные в localStorage с уникальным ключом для каждого студента
+        localStorage.setItem(`${studentId}_name`, newName);
+        localStorage.setItem(`${studentId}_birthYear`, newBirthYear);
+        localStorage.setItem(`${studentId}_iin`, newIin);
+        localStorage.setItem(`${studentId}_address`, newAddress);
+    
+        // Если выбрано новое фото
+        if (newPhoto) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                document.getElementById('profile-photo').src = event.target.result;
+                localStorage.setItem(`${studentId}_photo`, event.target.result);
+            };
+            reader.readAsDataURL(newPhoto);
+        }
+    
+        // Обновляем информацию на странице
+        document.getElementById('name-text').textContent = newName;
+        document.getElementById('birthyear-text').textContent = newBirthYear;
+        document.getElementById('iin-text').textContent = newIin;
+        document.getElementById('address-text').textContent = newAddress;
+    
+        // Скрываем форму редактирования и показываем обновленный профиль
+        document.getElementById('edit-form').style.display = 'none';
+        document.getElementById('profile-info').style.display = 'block';
+    });
+    
+    // Обработчик нажатия на кнопку "Отменить"
+    document.getElementById('cancel-edit').addEventListener('click', function() {
+        document.getElementById('edit-form').style.display = 'none';
+        document.getElementById('profile-info').style.display = 'block';
+    });
+    
+</script>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

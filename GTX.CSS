@@ -1,0 +1,52 @@
+/* Контейнер для контактов и адреса */
+.college-contacts {
+    width: 100%; /* Занимает всю ширину */
+    max-width: 1200px; /* Максимальная ширина */
+    margin: 20px auto; /* Отступы сверху и снизу */
+    padding: 20px; /* Отступы внутри */
+    background-color: #fff; /* Белый фон */
+    border-radius: 20px; /* Скругленные углы */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Заголовок для контактов */
+.college-contacts h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0288d1; /* Синий цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Текст с контактной информацией */
+.college-contacts p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px; /* Отступы между строками */
+}
+
+/* Контейнер для карты колледжа */
+.college-map {
+    margin-top: 40px; /* Отступ сверху */
+    width: 100%; /* Занимает всю ширину */
+    text-align: center; /* Центрируем карту */
+}
+
+/* Стиль для iframe (карты) */
+iframe {
+    width: 100%; /* Занимает всю ширину */
+    height: 400px; /* Высота карты */
+    border: none; /* Без рамки */
+    border-radius: 15px; /* Круглые края для карты */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень вокруг карты */
+}
+
+.college-contacts a {
+    color: #0288d1; /* Цвет ссылок */
+    text-decoration: none; /* Без подчеркивания */
+    font-weight: bold; /* Сделаем ссылку жирной */
+}
+
+.college-contacts a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}

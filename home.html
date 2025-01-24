@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - РПО1-24К</title>
+    <link rel="icon" href="images/logop.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">
+                <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+            </h1>
+            <nav>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижении</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    
+    <main class="py-5">
+        <div class="container">
+            <div class="image-container">
+                <img src="images/999.png" alt="Фото" />
+                <div class="text-overlay">Группа РПО1-24К</div>
+                <div class="text-overlay-vers">Будущие профессионалы IT-сферы</div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <!-- Заголовок страницы -->
+            <section class="text-center mb-5">
+                <h2>Новости РПО1-24К</h2>
+                <p>Следите за последними событиями в нашем колледже</p>
+            </section>
+        
+            <!-- Кнопки для фильтрации новостей -->
+            <div class="d-flex justify-content-center mb-4">
+                <button class="btn btn-outline-primary mx-2" id="btn-new">Новые</button>
+                <button class="btn btn-outline-secondary mx-2" id="btn-past">Прошедшие</button>
+            </div>
+        
+            <!-- Секция с новостями -->
+            <section id="news-container">
+                <div class="row">
+                    <!-- Новость 1 -->
+                    <div class="col-md-4 mb-4 news-item new">
+                        <div class="card">
+                            <img src="images/miss.png" class="card-img-top" alt="Мисс IT">
+                            <div class="card-body">
+                                <h5 class="card-title">Мисс IT 2025</h5>
+                                <p class="card-text">✨ Будьте яркими, проявите свои таланты и станьте "Мисс IT - 2025"!✨</p>
+                                <a href="news-miss-it.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 1 -->
+                    <div class="col-md-4 mb-4 news-item past">
+                        <div class="card">
+                            <img src="images/robo-sumo.jpg" class="card-img-top" alt="IT Week">
+                            <div class="card-body">
+                                <h5 class="card-title">🤖 Соревнование по робо-сумо</h5>
+                                <p class="card-text">Инженеры и программисты соревнуются, создавая роботов для битв в робо-сумо! Кто победит в этом захватывающем турнире?</p>
+                                <a href="news-robo-sumo.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 1 -->
+                    <div class="col-md-4 mb-4 news-item past">
+                        <div class="card">
+                            <img src="images/it-foot.jpg" class="card-img-top" alt="IT Week">
+                            <div class="card-body">
+                                <h5 class="card-title">⚽ Соревнование по футболу</h5>
+                                <p class="card-text">Команды студентов сражаются за звание чемпионов в футбольном турнире колледжа. Присоединяйтесь и поддержите любимую команду!</p>
+                                <a href="news-it-foot.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 2 -->
+                    <div class="col-md-4 mb-4 news-item past">
+                        <div class="card">
+                            <img src="images/it_week.jpg" class="card-img-top" alt="IT Week">
+                            <div class="card-body">
+                                <h5 class="card-title">IT Неделя</h5>
+                                <p class="card-text">Цикл мастер-классов и встреч с профессионалами в области технологий.</p>
+                                <a href="news-it-week.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 news-item new">
+                        <div class="card">
+                            <img src="images/ui_phone.jpg" class="card-img-top" alt="IT Week">
+                            <div class="card-body">
+                                <h5 class="card-title">Конкурс по разработке мобильных приложений</h5>
+                                <p class="card-text">Студенты представляют свои проекты мобильных приложений. Победители получат уникальные призы!</p>
+                                <a href="news-ui-phone.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 3 -->
+                    <div class="col-md-4 mb-4 news-item new">
+                        <div class="card">
+                            <img src="images/it.png" class="card-img-top" alt="Конкурс проектов">
+                            <div class="card-body">
+                                <h5 class="card-title">Конкурс IT проектов</h5>
+                                <p class="card-text">🌟 Покажите свои идеи, создавайте инновационные решения и станьте частью будущего технологий! 🌟</p>
+                                <a href="news-contest.html" class="btn btn-primary">Подробнее</a>
+                                <div class="info-icon" data-bs-toggle="tooltip" title="Все новости потеряют свою актуальность через 1 неделю.">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+    </main>
+
+    <script>
+        // Получаем кнопки и новости
+        const btnNew = document.getElementById("btn-new");
+        const btnPast = document.getElementById("btn-past");
+        const newItems = document.querySelectorAll(".news-item.new");
+        const pastItems = document.querySelectorAll(".news-item.past");
+        
+        // Функции для переключения
+        btnNew.addEventListener("click", function() {
+            newItems.forEach(item => item.style.display = "block"); // Показываем новые новости
+            pastItems.forEach(item => item.style.display = "none"); // Скрываем прошедшие новости
+        });
+        
+        btnPast.addEventListener("click", function() {
+            newItems.forEach(item => item.style.display = "none"); // Скрываем новые новости
+            pastItems.forEach(item => item.style.display = "block"); // Показываем прошедшие новости
+        });
+    </script>    
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

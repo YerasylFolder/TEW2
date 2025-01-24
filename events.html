@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достижения - РПО1-24К</title>
+    <link rel="icon" href="logop.png" type="image/png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="RADEON.CSS">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">
+                <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+            </h1>
+            <nav>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                    <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижения</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="achievements-container">
+        <h2>Достижения нашей группы</h2>
+        <div class="achievement-card">
+            <img src="images/rounded-in-photoretrica.png" alt="Футбол" class="achievement-icon">
+            <h3>Третье место в соревновании по футболу</h3>
+            <p class="achievement-description">Наша группа заняла третье место в межгрупповых соревнованиях по футболу среди 1 курса.</p>
+            <p class="achievement-date">Дата достижения: 27 сентябрь 2024</p>
+        </div>
+        <div class="achievement-card">
+            <img src="images/ptometei.png" alt="Новогодний стол" class="achievement-icon">
+            <h3>Второе место в конкурсе лучшего новогоднего стола</h3>
+            <p class="achievement-description">Мы заняли второе место в конкурсе на лучший новогодний стол среди студентов 1 курса.</p>
+            <p class="achievement-date">Дата достижения: 24 декабрь 2024</p>
+        </div>
+    </div>
+
+    <div class="achievements-container">
+        <h2>Мероприятие, проведённое нашей группой</h2>
+        <div class="achievement-card">
+            <img src="images/foot.jpg" alt="Поздравление" class="achievement-icon">
+            <h3>День Учителя</h3>
+            <p class="achievement-description">Наша группа провела мероприятие "День Учителя", подарив всем преподавателям шоколадку с сертификатом "Лучший учитель года".</p>
+            <p class="achievement-date">Дата проведения: 04 октября 2024</p>
+        </div>
+        <div class="achievement-card">
+            <img src="images/404.jpg" alt="Новогодний стол" class="achievement-icon">
+            <h3>404 Not Found</h3>
+            <p class="achievement-description">Мероприятие или достижение отсутствует или вообще не существовало.</p>
+            <p class="achievement-date">Дата проведения: None</p>
+        </div>
+    </div>
+    
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

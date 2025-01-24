@@ -1,0 +1,209 @@
+/* Базовые настройки */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Общий стиль для body и html */
+html, body {
+    height: 100%;             /* Занимают всю высоту экрана */
+    margin: 0;                /* Убираем внешние отступы */
+    display: flex;
+    flex-direction: column;   /* Вертикальная структура */
+}
+
+/* Основной контент */
+main {
+    flex: 1;                  /* Контент растягивается на оставшуюся высоту */
+    padding: 20px 0;          /* Если нужно, задайте небольшой отступ */
+}
+
+/* Футер */
+footer {
+    background-color: #343a40; /* Цвет фона футера */
+    color: #fff;               /* Цвет текста */
+    text-align: center;
+    margin: 0;                 /* Убираем все отступы */
+    padding: 10px 0;           /* Внутренние отступы сверху и снизу */
+}
+
+/* Блок копирайта */
+.footer-copyright {
+    background-color: #2d3236; /* Более тёмный фон */
+    margin: 0;                 /* Убираем внешние отступы */
+    padding: 10px 0;           /* Внутренние отступы */
+    font-size: 12px;           /* Размер текста */
+}
+
+/* Дополнительно, для того чтобы футер был внизу */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Устанавливаем 100% высоты экрана */
+}
+
+main {
+    flex: 1;  /* Этот блок займет все доступное пространство */
+}
+
+/* Футер на месте */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;             /* Белый цвет для текста ссылок */
+    text-decoration: none;   /* Убираем подчеркивание */
+}
+
+footer a:hover {
+    text-decoration: underline;  /* Подчеркивание при наведении */
+}
+
+.footer-content p {
+    margin-bottom: 10px;     /* Отступ снизу для абзаца с адресом */
+}
+
+.footer-content {
+    display: flex;           /* Используем Flexbox для выравнивания ссылок */
+    flex-direction: column;  /* Адрес в отдельной строке */
+    align-items: center;     /* Центрируем контент по горизонтали */
+}
+
+.phone-links {
+    display: flex;           /* Ссылки с номерами телефонов в одну строку */
+    gap: 10px;               /* Расстояние между номерами */
+    justify-content: center; /* Выравнивание номеров по центру */
+    align-items: center;     /* Выравнивание по вертикали */
+}
+
+
+.content-box {
+    background-color: #f9f9f9; /* Цвет фона */
+    padding: 120px;            /* Внутренние отступы */
+    border-radius: 10px;      /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Тень */
+    text-align: center;       /* Центрирование текста */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Шапка */
+header {
+    animation: slideIn 2s ease-out;
+    position: fixed;         /* Фиксируем шапку относительно окна браузера */
+    top: 0;                  /* Располагаем шапку в верхней части страницы */
+    left: 0;                 /* Устанавливаем шапку по левому краю */
+    width: 100%;             /* Шапка будет занимать всю ширину экрана */
+    z-index: 10;           /* Устанавливаем шапку на передний план */
+    background-color: #007bff; /* Цвет фона (можно изменить на ваш цвет) */
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+body {
+    margin-top: 80px;        /* Отступ для контента, чтобы не перекрывать шапку */
+}
+
+.image-container {
+  position: relative; /* Контейнер имеет относительное позиционирование */
+  display: inline-block; /* Чтобы размеры контейнера соответствовали размеру изображения */
+  animation: fadeIn 3s ease-in-out;
+}
+
+.image-container img {
+  display: block; /* Убирает лишние отступы */
+  width: 100%; /* Ширина изображения подстраивается под контейнер */
+}
+
+.text-overlay {
+  position: absolute; /* Абсолютное позиционирование текста */
+  top: 85%; /* Расположение по вертикали (50% от высоты контейнера) */
+  left: 50%; /* Расположение по горизонтали (50% от ширины контейнера) */
+  transform: translate(-50%, -50%); /* Центрирование текста */
+  color: white; /* Цвет текста */
+  font-size: 20px; /* Размер шрифта */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+  padding: 10px; /* Внутренние отступы вокруг текста */
+  border-radius: 30%; /* Сглаженные углы фона */
+}
+
+.text-overlay-vers {
+  position: absolute; /* Абсолютное позиционирование текста */
+  top: 93%; /* Расположение по вертикали (50% от высоты контейнера) */
+  left: 50%; /* Расположение по горизонтали (50% от ширины контейнера) */
+  transform: translate(-50%, -50%); /* Центрирование текста */
+  color: white; /* Цвет текста */
+  font-size: 20px; /* Размер шрифта */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+  padding: 10px; /* Внутренние отступы вокруг текста */
+  border-radius: 30%; /* Сглаженные углы фона */
+}
+
+/* Главная страница */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero img {
+    width: 1920px;
+    height: 822px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Карточки студентов */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    justify-content: center; /* Центрирование всех карточек */
+}

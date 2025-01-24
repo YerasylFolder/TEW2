@@ -1,0 +1,85 @@
+/* Основной контейнер достижений */
+.achievements-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Заголовок раздела */
+.achievements-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0288d1;
+    margin-bottom: 20px;
+}
+
+/* Стиль для карточки достижения */
+.achievement-card {
+    display: inline-block;
+    width: 48%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.achievement-card:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.achievement-card:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+/* Эффект при наведении на карточку */
+.achievement-card:hover {
+    transform: translateY(-5px); /* Поднимание карточки */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Более сильная тень */
+}
+
+/* Иконка достижения */
+.achievement-icon {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* Описание достижения */
+.achievement-description {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Дата достижения */
+.achievement-date {
+    font-size: 0.9rem;
+    color: #0288d1;
+}
+
+/* Анимация плавного появления карточки */
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .achievement-card {
+        width: 100%; /* Карточки занимают всю ширину экрана */
+        margin-bottom: 15px;
+    }
+}

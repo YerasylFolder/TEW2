@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание - РПО1-24К</title>
+    <link rel="icon" href="logop.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="GEFORCE.CSS">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="m-0">
+            <a href="home.html" class="text-white text-decoration-none">РПО1-24К</a> <!-- Добавлена ссылка на главную -->
+        </h1>
+        <nav>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-4"><a class="nav-link text-white" href="home.html">Главная</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="students.html">Студенты</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="schedule.html">Расписание</a></li>
+                <li class="nav-item me-4"><a class="nav-link text-white" href="events.html">Достижении</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">О колледже</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="monday" class="schedule-container fade-in">
+    <div class="day-header">
+        <h2>Понедельник</h2>
+    </div>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Час</th>
+                <th>Предметы</th>
+                <th>Кабинет</th>
+                <th>Преподаватель</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-edit" data-day="monday">Редактировать расписание</button>
+</div>
+
+<div id="tuesday" class="schedule-container fade-in">
+    <div class="day-header">
+        <h2>Вторник</h2>
+    </div>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Час</th>
+                <th>Предметы</th>
+                <th>Кабинет</th>
+                <th>Преподаватель</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">09:00</td>
+                <td class="editable">Литература</td>
+                <td class="editable">201</td>
+                <td class="editable">Сидоров</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-edit" data-day="tuesday">Редактировать расписание</button>
+</div>
+
+<div id="wednesday" class="schedule-container fade-in">
+    <div class="day-header">
+        <h2>Среда</h2>
+    </div>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Час</th>
+                <th>Предметы</th>
+                <th>Кабинет</th>
+                <th>Преподаватель</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">09:00</td>
+                <td class="editable">Литература</td>
+                <td class="editable">201</td>
+                <td class="editable">Сидоров</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-edit" data-day="wednesday">Редактировать расписание</button>
+</div>
+
+<div id="thursday" class="schedule-container fade-in">
+    <div class="day-header">
+        <h2>Четверг</h2>
+    </div>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Час</th>
+                <th>Предметы</th>
+                <th>Кабинет</th>
+                <th>Преподаватель</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">09:00</td>
+                <td class="editable">Литература</td>
+                <td class="editable">201</td>
+                <td class="editable">Сидоров</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-edit" data-day="thursday">Редактировать расписание</button>
+</div>
+
+<div id="friday" class="schedule-container fade-in">
+    <div class="day-header">
+        <h2>Пятница</h2>
+    </div>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Час</th>
+                <th>Предметы</th>
+                <th>Кабинет</th>
+                <th>Преподаватель</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">09:00</td>
+                <td class="editable">Литература</td>
+                <td class="editable">201</td>
+                <td class="editable">Сидоров</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+            <tr>
+                <td class="editable">1</td>
+                <td class="editable">10:00</td>
+                <td class="editable">Математика, Физика</td>
+                <td class="editable">101, 102</td>
+                <td class="editable">Петров, Иванова</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-edit" data-day="friday">Редактировать расписание</button>
+</div>
+
+<!-- Модальное окно для ввода пин-кода -->
+<div id="pin-modal" class="modal">
+    <div class="modal-content">
+        <h3>Введите 4-значный пин-код</h3>
+        <input id="pin-input" type="password" maxlength="4" placeholder="••••" />
+        <div class="modal-buttons">
+            <button id="pin-submit" class="btn">Подтвердить</button>
+            <button id="pin-cancel" class="btn">Отмена</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для активных ссылок -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.hash;
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+<script>
+    // Пин-код
+const PIN_CODE = "1234"; // Установленный пин-код
+
+// Элементы модального окна
+const pinModal = document.getElementById("pin-modal");
+const pinInput = document.getElementById("pin-input");
+const pinSubmit = document.getElementById("pin-submit");
+const pinCancel = document.getElementById("pin-cancel");
+
+// Хранилище состояния редактирования для каждого дня
+const editState = {};
+
+// Обработка кнопок "Редактировать" для всех контейнеров
+document.querySelectorAll(".btn-edit").forEach((editButton) => {
+    const containerId = editButton.dataset.day; // Получаем уникальный идентификатор контейнера
+    editState[containerId] = false; // Изначально редактирование отключено
+
+    // Добавление обработчика клика для кнопки редактирования
+    editButton.addEventListener("click", () => {
+        if (!editState[containerId]) {
+            // Если редактирование не включено, показать модальное окно для ввода пин-кода
+            pinModal.style.display = "flex";
+            pinInput.value = ""; // Очистить поле ввода
+
+            // Проверка пин-кода
+            pinSubmit.onclick = () => {
+                if (pinInput.value === PIN_CODE) {
+                    pinModal.style.display = "none"; // Скрыть модальное окно
+                    alert(`Пин-код подтверждён! Расписание для ${containerId} доступно для редактирования.`);
+                    editState[containerId] = true; // Разрешить редактирование
+                    enableEditing(containerId); // Включить редактирование для контейнера
+                    editButton.textContent = "Сохранить расписание"; // Изменить текст кнопки
+                } else {
+                    alert("Неверный пин-код! Попробуйте снова.");
+                    pinInput.value = ""; // Очистить поле ввода
+                }
+            };
+
+            // Закрыть модальное окно
+            pinCancel.onclick = () => {
+                pinModal.style.display = "none";
+            };
+        } else {
+            // Если редактирование включено, сохранить изменения
+            saveSchedule(containerId);
+            editButton.textContent = "Редактировать расписание";
+            editState[containerId] = false; // Отключить редактирование
+        }
+    });
+});
+
+// Включение редактирования для определённого контейнера
+function enableEditing(containerId) {
+    const editableCells = document.querySelectorAll(`#${containerId} .schedule-table td.editable`);
+    editableCells.forEach((cell) => {
+        cell.addEventListener("click", () => {
+            if (editState[containerId]) {
+                const currentText = cell.textContent;
+                const input = document.createElement("input");
+                input.type = "text";
+                input.value = currentText;
+                cell.textContent = "";
+                cell.appendChild(input);
+
+                input.addEventListener("blur", () => {
+                    cell.textContent = input.value;
+                });
+
+                input.focus();
+            }
+        });
+    });
+}
+
+// Сохранение данных в localStorage для определённого контейнера
+function saveSchedule(containerId) {
+    const tableRows = document.querySelectorAll(`#${containerId} .schedule-table tbody tr`);
+    const scheduleData = [];
+
+    // Извлечение данных из таблицы
+    tableRows.forEach((row) => {
+        const cells = row.querySelectorAll("td");
+        const rowData = Array.from(cells).map((cell) => cell.textContent.trim());
+        scheduleData.push(rowData);
+    });
+
+    // Сохранение в localStorage
+    localStorage.setItem(`${containerId}Schedule`, JSON.stringify(scheduleData));
+    alert(`Расписание для "${containerId}" успешно сохранено!`);
+}
+
+// Загрузка расписания из localStorage
+function loadSchedules() {
+    document.querySelectorAll(".schedule-container").forEach((container) => {
+        const containerId = container.id; // Уникальный идентификатор контейнера
+        const storedData = localStorage.getItem(`${containerId}Schedule`);
+
+        if (storedData) {
+            const scheduleData = JSON.parse(storedData);
+            const tableRows = container.querySelectorAll(".schedule-table tbody tr");
+
+            tableRows.forEach((row, rowIndex) => {
+                const cells = row.querySelectorAll("td");
+                scheduleData[rowIndex]?.forEach((cellData, cellIndex) => {
+                    if (cells[cellIndex]) {
+                        cells[cellIndex].textContent = cellData;
+                    }
+                });
+            });
+        }
+    });
+}
+
+// Загрузка данных при загрузке страницы
+window.addEventListener("DOMContentLoaded", loadSchedules);
+
+</script>
+
+    <footer class="footer-content">
+        <p><a href="https://yandex.ru/maps/?text=050040%20г.%20Алматы,%20пр.%20Абая%2052г" target="_blank">050040 г. Алматы, пр. Абая 52г</a></p>
+        <div class="phone-links">
+            <a href="tel:+77752818911">+7 775 281 89 11</a> | <a href="tel:+77072590963">+7 707 259 09 63</a>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; COPYRIGHT 2025 ИННОВАЦИОННЫЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ. ВСЕ ПРАВА ЗАЩИЩЕНЫ. САЙТ СОЗДАН ВЕЛИКИМ СОЗДАТЕЛЕМ</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+/* Карточки новостей */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Кнопки для фильтрации */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Скрытие новостей по категории */
+.news-item {
+    display: block; /* Все новости видны по умолчанию */
+}
+
+/* Для новых новостей */
+.new {
+    display: block;
+}
+
+/* Для прошедших новостей */
+.past {
+    display: none;
+}
+
+/* Стили для иконки "i" */
+.info-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #333;  /* Черная граница */
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    font-family: 'Sacramento', cursive;  /* Применяем рукописный шрифт "Sacramento" */
+    text-transform: lowercase; /* Делаем букву "i" маленькой */
+}
+
+/* При наведении на иконку меняем цвет фона */
+.info-icon:hover {
+    background-color: #888;
+}
+
+/* Облако подсказки */
+.info-icon::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 35px;  /* Место появления подсказки */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;  /* Темный серый фон */
+    color: white;
+    font-size: 12px;  /* Маленький шрифт */
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 120px;  /* Устанавливаем ширину облака */
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* При наведении на иконку отображаем облако */
+.info-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
