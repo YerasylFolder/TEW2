@@ -207,3 +207,48 @@ body {
     animation: fadeIn 1.5s ease-in-out;
     justify-content: center; /* Центрирование всех карточек */
 }
+
+/* Для экранов шириной до 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Уменьшите шрифт */
+    }
+
+    .container {
+        padding: 10px; /* Уменьшите отступы */
+    }
+
+    .header, .footer {
+        text-align: center; /* Выравнивание для мобильных */
+    }
+
+    .menu {
+        flex-direction: column; /* Если есть горизонтальное меню, сделайте его вертикальным */
+        align-items: center;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}
+
+/* Для экранов шириной до 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Еще меньше шрифт для маленьких экранов */
+    }
+
+    .header {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
